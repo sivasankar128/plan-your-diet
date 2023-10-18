@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-size: cover;
+            background-repeat: none;
+        }
+        nav{
+            display:flex;
+            padding:1rem 0 1rem 2rem;
+            background-color: rgb(126, 79, 170);
+            background-attachment: fixed;
+            height:100px;
+        }
+        ul{
+            list-style-type: none;
+            text-decoration: none;
+            padding:2rem 3rem 0rem 2rem;
+        }
+        li{
+            font-size: large;
+            padding-left: 20px;
+            padding-right: 20px;
+            cursor: pointer;
+            display: inline-block;
+        
+        }
+        li:hover{
+            transform:translatey(-15px);
+            font-size: larger;
+            border-bottom: 4px solid white;
+            transition:0.3s;
+            padding:5px 20px 5px 20px;
+            transition-delay: 0.1s;
+            transition-property: all;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            
+        }
+        .info{
+            float:right;
+            display:flex;
+            position: relative;
+            left: 49rem;
+            color:white;
+            cursor: pointer;    
+        }
+        .contact{
+            padding-left:10rem;
+            font-size: 18px;
+        }
+        h2{
+            color:blueviolet    
+        }
+        button{
+            height:60px;
+            width:180px;
+            font-size: 20px;
+            color:white;
+            background-color: blueviolet;
+            font-weight: 600;
+            border: 3px solid gold;
+            border-radius: 30px;
+        }
+        button:hover{
+            color:blueviolet;
+            background-color: white;
+        }
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            font-size: 20px;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1 style="color:white;font-size:40px;font-family:system-ui,'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue'">Plan   Your   Diet </h1> 
+        <img width="54" height="54" style="margin-top: 35px;margin-left: 1rem;" src="https://img.icons8.com/wired/64/heart-with-pulse.png" alt="heart-with-pulse"/>
+        <div class="info">
+        <ul>
+            <a href="indexdup.html" style="color:white"><li> HOME </li></a>
+        </ul>
+    </div>
+    </nav>
+    <h1 style="text-align: center;">Our Location</h1>
+   
+    <iframe style="width:70%;height:600px;margin-left: 15rem;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6689.577088957226!2d81.5240828346898!3d16.56826395838621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a37cd4e8d1d1d8d%3A0xab52da15615ac690!2sVishnu%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1696855039928!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <h1 style="padding-left: 6rem;">Contact Details :</h1>
+    <div class="contact">
+        <h2>Phone Number</h2>
+        <i class="fa fa-phone" style="font-size:24px"></i> 7093502793 <br>      
+        <i class="fa fa-phone" style="font-size:24px"></i> 9581847474
+
+        <h2>Email</h2>
+        <i class="fa fa-envelope" style="font-size:24px"></i> 21pa1a0413@vishnu.edu.in <br>      
+        <i class="fa fa-envelope" style="font-size:24px"></i> 21pa1a0418@vishnu.edu.in
+
+        <form action="mailto:sivaavula2818gmail.com" method="POST" enctype="multipart/form-data">
+            <h2>Feedback</h2>
+        <textarea name="feedback" id="fb" cols="80" rows="12" placeholder="Enter Your Feedback" style="font-size:20px"></textarea><br>
+            <button value="Submit">Submit</button>
+        </form>
+    </div>
+    <br><br><br><br>
+    <footer>
+        <p>&copy; 2023 Plan Your Diet. All rights reserved.</p>
+    </footer>
+</body>
+</html>

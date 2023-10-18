@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=.0">
+    <title>PLAN YOUR DIET</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-size: cover;
+            background-repeat: none;
+        }
+        nav{
+            display:flex;
+            padding:1rem 0 1rem 2rem;
+            background-color: rgb(126, 79, 170);
+            height: 90px;    
+        }
+        ul{
+            list-style-type: none;
+            text-decoration: none;
+            padding:1rem 3rem 0rem 2rem;
+        }
+        li{
+            font-size: large;
+            padding-left: 20px;
+            padding-right: 20px;
+            cursor: pointer;
+            display: inline-block;
+        
+        }
+        li:hover{
+            transform:translatey(-15px);
+            font-size: larger;
+            border-bottom: 4px solid white;
+            transition:0.3s;
+            padding:5px 20px 5px 20px;
+            transition-delay: 0.1s;
+            transition-property: all;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            
+        }
+        .info{
+            float:right;
+            display:flex;
+            position: relative;
+            left: 40rem;
+            color:white;
+            cursor: pointer;    
+        }
+        .gym:hover{
+            padding:5px 20px 5px 20px;
+            border-top: 4px solid white;
+            border-bottom: 4px solid white;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+        .bg{
+            height:500px;
+            width:38%;
+            float:right
+        }
+        .diet{
+            padding:2.5rem;
+            font-size: 2rem;
+            border:2px solid black;
+            margin:1rem;
+            margin-left: 3rem;
+            margin-right: 60rem;
+            border-radius: 40px;
+            color: rgb(126, 79, 170);
+            font-style:unset;
+            font-weight: 700;
+            font-family:system-ui;
+        }
+        .diet:hover{
+            box-shadow: 2px 5px rgb(126, 79, 170) ;
+        }
+        .go{
+            float:right;
+            background-color: rgb(126, 79, 170) ;
+            color:white;
+            font-size: 20px;
+            border:3px solid wheat;
+            padding: 0.6rem;
+            border-radius: 20px;
+            margin-top:20px ;
+            margin-right: -20px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .go:hover{
+            color: rgb(126, 79, 170);
+            background-color: white;
+            padding:0.8rem;
+            margin-top:18px ;
+            font-weight: 600;
+            border: 3px solid rgb(126, 79, 170);
+            transform: translatex(15px);
+            transition: 0.3s;
+        }
+        .dropbtn {
+        background-color: rgb(126, 79, 170);
+        color: white;
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        }
+
+        .dropdown {
+        position: relative;
+        display: inline-block;
+        }
+
+        .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 220px;
+        box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        padding-left: 1rem;
+        transform: translateX(-60%);
+        }
+
+        .dropdown-content h4 {
+        color: black;
+        padding: 2px;
+        text-decoration: none;
+        display: block;
+        }
+
+        .dropdown-content a:hover {background-color: #f1f1f1}
+
+        .dropdown:hover .dropdown-content {
+        display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+        background-color: rgb(126, 79, 170);
+        }
+        
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            font-size: 20px;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    
+    <script src="index.js"></script>
+    <nav>
+        <h1 style="color:white;font-size:40px;font-family:system-ui,'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue'">Plan   Your   Diet </h1> 
+        <img width="54" height="54" style="margin-top: 35px;margin-left: 1rem;" src="https://img.icons8.com/wired/64/heart-with-pulse.png" alt="heart-with-pulse"/>
+        <div class="info">
+        <ul>
+            <li> HOME </li>
+            <a href="gym.html" style="color:white"><li class="gym">GYM Bro's</li></a>
+            <a href="aboutus.html" style="color:white"><li>ABOUT US</li></a>
+            <div class="dropdown">
+                <button class="dropbtn">Profile <i class="fa fa-user" aria-hidden="true"></i></button>
+                <div class="dropdown-content">
+                <h4>Name : <%= usrnm %></h4>
+                <h4>Email : <%= mail %></h4>
+                <a href="login.html"><button style="margin-bottom:4px;height:30px;width:60px;color:white;font-weight: 600;background-color: rgb(126, 79, 170);border:2px solid white;border-radius: 10px;cursor: pointer;">Logout</button></a>
+            </div>
+        </ul>
+    </div>
+    </nav>
+    <h1 style="font-family:system-ui;padding-left: 2rem;">Welcome <%= usrnm %>!!</h1>
+    <h2 style="font-family:system-ui;padding-left: 2rem;">Diet to be maintained by the people with...</h2>
+    <img src="https://png.pngtree.com/png-clipart/20221017/original/pngtree-family-nutritionist-diet-nutrition-doctor-png-image_8700853.png" class="bg" alt="">
+    <div class="diet">D i a b e t e s
+        <a href="diabetes.html"><button class="go">Go➡️</button></a>
+    </div>
+    <div class="diet">B l o o d   p r e s s u r e
+        <a href="bloodpressure.html"><button class="go">Go➡️</button></a>
+    </div>
+    <div class="diet">A a s t h m a
+        <a href="aasthma.html"><button class="go">Go➡️</button></a>
+    </div>
+    <div class="diet">T h y r o i d
+        <a href="thyroid.html"><button class="go">Go➡️</button> </a>
+    </div>
+    <br><br>
+    <footer>
+        <p>&copy; 2023 Plan Your Diet. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
